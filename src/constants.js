@@ -26,10 +26,10 @@ const types = {
 }
     
 const operators = {
-    'eq': function(conditionValue, fieldTypeVAlue){ return conditionValue === fieldTypeVAlue},
-    'neq': function(conditionValue, fieldTypeVAlue){ return conditionValue !== fieldTypeVAlue},
-    'gt': function(conditionValue, fieldTypeVAlue){ return conditionValue > fieldTypeVAlue},
-    'gte': function(conditionValue, fieldTypeVAlue){ return conditionValue >= fieldTypeVAlue},
+    'eq': function(fieldTypeVAlue, conditionValue ){ return conditionValue === fieldTypeVAlue},
+    'neq': function(fieldTypeVAlue, conditionValue ){ return conditionValue !== fieldTypeVAlue},
+    'gt': function(fieldTypeValue, conditionValue ){ return fieldTypeValue > conditionValue},
+    'gte': function(fieldTypeValue, conditionValue ){ return fieldTypeValue >= conditionValue},,
     'contains': function(conditionValue, fieldTypeVAlue){ 
       return (fieldTypeVAlue.includes(conditionValue))
     }
